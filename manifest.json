@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "FlySheep 游戏评分标签",
+  "version": "0.2.0",
+  "description": "为 flysheep6.com 的游戏列表与详情页添加 Steam / 小黑盒评分标签，按暗黑装备色阶分级着色。",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "FlySheep 游戏评分标签",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://store.steampowered.com/*",
+    "*://api.xiaoheihe.cn/*",
+    "*://www.xiaoheihe.cn/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.flysheep6.com/*",
+        "*://flysheep6.com/*"
+      ],
+      "js": ["src/content.js"],
+      "css": ["src/tags.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

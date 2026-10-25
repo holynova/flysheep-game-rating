@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>FlySheep 游戏评分标签</title>
+  <link rel="stylesheet" href="tags.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="fgr-popup">
+    <!-- Header -->
+    <header class="fgr-header">
+      <div class="fgr-header-brand">
+        <img class="fgr-logo" src="../icons/icon48.png" alt="logo" width="24" height="24">
+        <h1 class="fgr-title">FlySheep 评分标签</h1>
+      </div>
+      <span class="fgr-badge">v0.2.0</span>
+    </header>
+
+    <!-- Status Bar -->
+    <div class="fgr-status-bar">
+      <span class="fgr-status-dot"></span>
+      <span class="fgr-status-text">已适配 flysheep6.com 列表与详情页</span>
+    </div>
+
+    <!-- Quick Search -->
+    <section class="fgr-card">
+      <div class="fgr-card-title">独立查分台</div>
+      <form id="search-form" class="fgr-search-form">
+        <input
+          id="search-input"
+          class="fgr-input"
+          type="text"
+          placeholder="输入游戏名（中/英文）…"
+          autocomplete="off"
+        />
+        <button id="search-btn" class="fgr-btn fgr-btn-primary" type="submit">查询</button>
+      </form>
+      <div id="search-result" class="fgr-search-result" style="display: none;">
+        <div class="fgr-search-name" id="result-name"></div>
+        <div class="fgr-tags" id="result-tags"></div>
+      </div>
+    </section>
+
+    <!-- Cache Management -->
+    <section class="fgr-card fgr-card-row">
+      <div class="fgr-cache-info">
+        <span class="fgr-label">本地缓存</span>
+        <span class="fgr-cache-count" id="cache-count">读取中…</span>
+      </div>
+      <button id="clear-cache-btn" class="fgr-btn fgr-btn-secondary" type="button">清空缓存</button>
+    </section>
+
+    <!-- Color Legend -->
+    <section class="fgr-card">
+      <details class="fgr-legend-details">
+        <summary class="fgr-card-title fgr-legend-summary">暗黑装备色阶规则</summary>
+        <div class="fgr-legend-list">
+          <div class="fgr-legend-item"><span class="fgr-tag fgr-grade-gold">传奇 ≥95</span><span>好评如潮级神作 (评测≥500)</span></div>
+          <div class="fgr-legend-item"><span class="fgr-tag fgr-grade-purple">史诗 ≥85</span><span>优秀佳作 (评测≥50)</span></div>
+          <div class="fgr-legend-item"><span class="fgr-tag fgr-grade-blue">稀有 ≥75</span><span>值得一玩的优质作品</span></div>
+          <div class="fgr-legend-item"><span class="fgr-tag fgr-grade-green">优秀 ≥60</span><span>褒贬偏正面</span></div>
+          <div class="fgr-legend-item"><span class="fgr-tag fgr-grade-white">普通 &lt;60</span><span>褒贬不一或偏负面</span></div>
+        </div>
+      </details>
+    </section>
+
+    <!-- Footer Links -->
+    <footer class="fgr-footer">
+      <a class="fgr-link" href="https://www.flysheep6.com" target="_blank" rel="noopener noreferrer">访问飞羊网</a>
+      <span class="fgr-sep">·</span>
+      <a class="fgr-link" href="https://github.com/holynova/flysheep-game-rating" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
