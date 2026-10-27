@@ -15,7 +15,8 @@ Chrome 扩展（MV3，原生 JS，无构建步骤）：为 flysheep6.com 游戏�
 ```powershell
 python scripts/cdp_test.py          # 启动独立 Chrome 实例（--load-extension）实测列表页+详情页，截图到 docs/
 python scripts/cdp_test.py --keep   # 保留窗口人工复查
+python scripts/cdp_detail_shot.py   # 详情页标题区定位截图（整页截图 3 万像素过高时用）
 python scripts/make_icons.py        # 重新生成图标
 ```
 
-cdp_test 需要本机 websocket-client（`pip install websocket-client`）与 `C:\Program Files\Google\Chrome\Application\chrome.exe`。
+cdp_test 需要本机 websocket-client（`pip install websocket-client`）。Chrome 155 stable 静默忽略 `--load-extension`，脚本已优先用 Playwright Chromium（`%LOCALAPPDATA%\ms-playwright\chromium-1228`）。
