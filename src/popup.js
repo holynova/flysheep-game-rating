@@ -39,7 +39,7 @@ function renderTags(container, data) {
     tags.push({
       cls: `fgr-grade-${data.steam.grade}`,
       text: `Steam ${data.steam.score}%`,
-      tip: `${data.steam.name || ""} · ${data.steam.label}${countText ? ` · ${countText}条评测` : ""}`,
+      tip: `${data.steam.name || ""}，${data.steam.label}${countText ? `，${countText}条评测` : ""}`,
       href: data.steam.appid ? `https://store.steampowered.com/app/${data.steam.appid}/` : null
     });
   }
@@ -48,7 +48,7 @@ function renderTags(container, data) {
     tags.push({
       cls: `fgr-grade-${data.heybox.grade}`,
       text: `小黑盒 ${data.heybox.score}`,
-      tip: `小黑盒：${data.heybox.name || ""}`,
+      tip: `小黑盒：${data.heybox.name || ""}（满分10分）`,
       href: heyboxAppid ? `https://www.xiaoheihe.cn/app/topic/game/pc/${heyboxAppid}` : null
     });
   }
@@ -87,7 +87,7 @@ clearCacheBtn.addEventListener("click", async () => {
   try {
     await chrome.storage.local.remove(CACHE_KEY);
     cacheCountEl.textContent = "已清空";
-    clearCacheBtn.textContent = "已清除";
+    clearCacheBtn.textContent = "已清空";
     setTimeout(() => {
       clearCacheBtn.textContent = "清空缓存";
       updateCacheCount();
@@ -110,7 +110,7 @@ searchForm.addEventListener("submit", async (e) => {
 
   const loadingTag = document.createElement("span");
   loadingTag.className = "fgr-tag fgr-grade-none";
-  loadingTag.textContent = "正在连接评分接口…";
+  loadingTag.textContent = "正在查询评分…";
   resultTagsEl.appendChild(loadingTag);
 
   try {

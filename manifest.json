@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "FlySheep 游戏评分标签",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "为 flysheep6.com 的游戏列表与详情页添加 Steam / 小黑盒评分标签，按暗黑装备色阶分级着色。",
   "icons": {
     "16": "icons/icon16.png",

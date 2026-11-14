@@ -96,7 +96,7 @@
       tags.push({
         cls: `fgr-grade-${data.steam.grade}`,
         text: `Steam ${data.steam.score}%`,
-        tip: `${data.steam.name || ""} · ${data.steam.label}${countText ? ` · ${countText}条评测` : ""} · 点击打开 Steam 商店页`,
+        tip: `${data.steam.name || ""}，${data.steam.label}${countText ? `，${countText}条评测` : ""}，点击打开 Steam 商店页`,
         href: data.steam.appid ? `https://store.steampowered.com/app/${data.steam.appid}/` : null
       });
     }
@@ -105,7 +105,7 @@
       tags.push({
         cls: `fgr-grade-${data.heybox.grade}`,
         text: `小黑盒 ${data.heybox.score}`,
-        tip: `小黑盒匹配：${data.heybox.name || ""} · 点击打开小黑盒页面`,
+        tip: `小黑盒匹配：${data.heybox.name || ""}（满分10分），点击打开小黑盒页面`,
         href: heyboxAppid ? `https://www.xiaoheihe.cn/app/topic/game/pc/${heyboxAppid}` : null
       });
     }
