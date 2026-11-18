@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="360" viewBox="0 0 1200 360"
+     role="img" aria-labelledby="title desc">
+  <title id="title">FlySheep 游戏评分标签 — 飞羊站游戏一眼看出成色</title>
+  <desc id="desc">暗色底标题：FlySheep 游戏评分标签；右侧是三张评分标签示意，金色传奇哈迪斯 Steam 96%、紫色史诗最终幻想共鸣小黑盒 9.4、蓝色稀有战锤 40K 爆矢枪 2 Steam 84%，下方是六档色阶条。</desc>
+
+  <rect width="1200" height="360" rx="26" fill="#14161c"/>
+
+  <g id="title-block" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="56" y="62" font-size="19" letter-spacing="3" fill="#8fa8b0">CHROME 扩展 · MANIFEST V3 · STEAM + 小黑盒</text>
+    <text x="56" y="128" font-size="54" font-weight="700" fill="#e8ecf0">FlySheep 游戏评分标签</text>
+    <text x="56" y="168" font-size="23" fill="#e8ecf0">飞羊站游戏，一眼看出成色</text>
+    <text x="56" y="204" font-size="19" fill="#aab8c0">Steam 好评率 + 小黑盒评分，暗黑装备色阶分级着色。</text>
+    <g id="chips" font-size="18" fill="#e8ecf0" text-anchor="middle">
+      <g><rect x="56" y="238" width="150" height="36" rx="18" fill="#1b262c" stroke="#33454f" stroke-width="1.5"/><text x="131" y="262">双数据源</text></g>
+      <g><rect x="218" y="238" width="150" height="36" rx="18" fill="#1b262c" stroke="#33454f" stroke-width="1.5"/><text x="293" y="262">6 档色阶</text></g>
+      <g><rect x="380" y="238" width="150" height="36" rx="18" fill="#1b262c" stroke="#33454f" stroke-width="1.5"/><text x="455" y="262">独立查分弹窗</text></g>
+      <g><rect x="542" y="238" width="126" height="36" rx="18" fill="#1b262c" stroke="#33454f" stroke-width="1.5"/><text x="605" y="262">v0.2.1</text></g>
+    </g>
+  </g>
+
+  <g id="tags-demo" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="810" y="40" font-size="18" fill="#8fa8b0">注入效果 · 点击直达 Steam / 小黑盒</text>
+    <g id="tag-gold">
+      <rect x="810" y="56" width="332" height="56" rx="10" fill="#1c1a12" stroke="#f5c518" stroke-width="2"/>
+      <text x="830" y="92" font-size="22" font-weight="700" fill="#f5c518">哈迪斯 · Hades</text>
+      <rect x="1000" y="70" width="126" height="28" rx="6" fill="#f5c518"/><text x="1063" y="90" font-size="17" font-weight="700" fill="#14161c" text-anchor="middle">Steam 96%</text>
+    </g>
+    <g id="tag-purple">
+      <rect x="810" y="124" width="332" height="56" rx="10" fill="#1a1420" stroke="#a855f7" stroke-width="2"/>
+      <text x="830" y="160" font-size="22" font-weight="700" fill="#c084fc">最终幻想共鸣</text>
+      <rect x="1000" y="138" width="126" height="28" rx="6" fill="#7c3aed"/><text x="1063" y="158" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">小黑盒 9.4</text>
+    </g>
+    <g id="tag-blue">
+      <rect x="810" y="192" width="332" height="56" rx="10" fill="#121a24" stroke="#2f9df0" stroke-width="2"/>
+      <text x="830" y="228" font-size="20" font-weight="700" fill="#7db8d8">战锤：爆矢枪 2</text>
+      <rect x="1000" y="206" width="126" height="28" rx="6" fill="#1c6ec2"/><text x="1063" y="226" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">Steam 84%</text>
+    </g>
+    <g id="tier-bar" font-size="16" text-anchor="middle">
+      <rect x="810" y="268" width="52" height="30" rx="6" fill="#f5c518"/><text x="836" y="289" font-weight="700" fill="#14161c">传奇</text>
+      <rect x="866" y="268" width="52" height="30" rx="6" fill="#7c3aed"/><text x="892" y="289" font-weight="700" fill="#ffffff">史诗</text>
+      <rect x="922" y="268" width="52" height="30" rx="6" fill="#1c6ec2"/><text x="948" y="289" font-weight="700" fill="#ffffff">稀有</text>
+      <rect x="978" y="268" width="52" height="30" rx="6" fill="#22c55e"/><text x="1004" y="289" font-weight="700" fill="#14161c">优秀</text>
+      <rect x="1034" y="268" width="52" height="30" rx="6" fill="#c8d6dc"/><text x="1060" y="289" font-weight="700" fill="#14161c">普通</text>
+      <rect x="1090" y="268" width="52" height="30" rx="6" fill="#5b6b72"/><text x="1116" y="289" font-weight="700" fill="#ffffff">未收录</text>
+    </g>
+    <text x="976" y="328" font-size="16" fill="#8fa8b0" text-anchor="middle">金 ≥95% · 紫 ≥85% · 蓝 ≥75% · 绿 ≥60%</text>
+  </g>
+</svg>
